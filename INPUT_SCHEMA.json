@@ -1,0 +1,21 @@
+{
+    "title": "Example secret input actor",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "username": {
+            "title": "Username",
+            "type": "string",
+            "description": "A normal, unencrypted input field",
+            "editor": "textfield"
+        },
+        "password": {
+            "title": "Password",
+            "type": "string",
+            "description": "A secret, encrypted input field",
+            "editor": "textfield",
+            "isSecret": true
+        }
+    },
+    "required": ["username", "password"]
+}
